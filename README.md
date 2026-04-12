@@ -2,11 +2,13 @@
 
 ## 1. Overview
 
-This project aims to predict customer churn in a subscription-based business environment using machine learning techniques. Customer churn refers to customers who discontinue using a service, directly impacting revenue, customer lifetime value, and long-term business sustainability.
+This project applies machine learning to predict customer churn in a subscription-based environment, enabling organisations to proactively identify at-risk customers and protect revenue.
 
-From a business perspective, retaining existing customers is significantly more cost-effective than acquiring new ones. By identifying customers at risk of churning, organisations can implement targeted retention strategies such as personalised offers, improved customer support, and pricing adjustments.
+Customer churn refers to customers who discontinue using a service, directly impacting revenue, customer lifetime value (LTV), and long-term business sustainability. From a business perspective, retaining existing customers is significantly more cost-effective than acquiring new ones.
 
-This project approaches churn prediction as a binary classification problem, where the goal is to predict whether a customer will churn (Yes) or not (No).
+By identifying customers at risk of churning, organisations can implement targeted retention strategies such as personalised offers, improved customer support, and pricing adjustments.
+
+This project frames churn prediction as a binary classification problem, where the goal is to predict whether a customer will churn (Yes) or not (No).
 
 ---
 
@@ -27,7 +29,7 @@ The dataset contains customer demographic, service, and billing-related informat
 
 - Churn is not evenly distributed across customers  
 - Behavioral and pricing factors influence churn  
-- Early indicators suggest customer lifecycle stage is critical  
+- Customer lifecycle stage plays a critical role in retention  
 
 ---
 
@@ -95,6 +97,7 @@ The confusion matrix shows the model’s classification performance:
 
 The ROC curve evaluates the trade-off between true positive rate and false positive rate.
 
+- Random Forest achieved approximately **79% accuracy**  
 - The AUC score of approximately **0.82** indicates strong overall model performance  
 - The model demonstrates good ability to distinguish between churn and non-churn customers  
 
@@ -165,6 +168,8 @@ Implementing a predictive churn model enables a shift from reactive retention ef
 > From reactive service recovery → to proactive customer retention
 
 This aligns with a governance-first approach where predictive models are embedded into structured decision-making workflows to ensure measurable outcomes.
+
+Ultimately, the value of this model is not in prediction alone, but in enabling targeted, measurable interventions that directly impact revenue and customer retention outcomes.
 
 ---
 
