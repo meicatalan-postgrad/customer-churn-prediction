@@ -57,3 +57,11 @@ Customer churn represents a direct loss in revenue. Traditional retention effort
 ## Dataset
 Telco Customer Churn Dataset  
 (Source: Kaggle)
+
+## Model Evaluation Visuals
+
+### Confusion Matrix
+![Confusion Matrix](confusion_matrix.png)
+
+### ROC Curve
+![ROC Curve](roc_curve.png)
