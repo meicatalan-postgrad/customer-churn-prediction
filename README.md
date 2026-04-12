@@ -4,7 +4,7 @@
 
 This project aims to predict customer churn in a subscription-based business environment using machine learning techniques. Customer churn refers to customers who discontinue using a service, directly impacting revenue, customer lifetime value, and long-term business sustainability.
 
-From a business perspective, retaining existing customers is more cost-effective than acquiring new ones. By identifying customers at risk of churning, organisations can implement targeted retention strategies such as personalized offers, improved customer support, and pricing adjustments.
+From a business perspective, retaining existing customers is significantly more cost-effective than acquiring new ones. By identifying customers at risk of churning, organisations can implement targeted retention strategies such as personalised offers, improved customer support, and pricing adjustments.
 
 This project approaches churn prediction as a binary classification problem, where the goal is to predict whether a customer will churn (Yes) or not (No).
 
@@ -21,13 +21,13 @@ This project approaches churn prediction as a binary classification problem, whe
 
 ## 3. Data Understanding & Exploration
 
-The dataset contains customer demographic, account, and service-related information. Key features include tenure, monthly charges, contract type, and service usage.
+The dataset contains customer demographic, service, and billing-related information. Key features include tenure, monthly charges, contract type, and payment method.
 
 ### 3.1 Key Observations
 
 - Churn is not evenly distributed across customers  
-- Certain features show strong relationships with churn behavior  
-- Early indicators suggest behavioral and pricing factors influence churn  
+- Behavioral and pricing factors influence churn  
+- Early indicators suggest customer lifecycle stage is critical  
 
 ---
 
@@ -56,23 +56,23 @@ From a business standpoint, this may indicate a need to reassess pricing strateg
 The following steps were performed to prepare the data:
 
 - Handling missing values  
-- Encoding categorical variables  
-- Feature scaling  
+- Converting `TotalCharges` to numeric format  
+- Encoding categorical variables using one-hot encoding  
 - Train-test split for model validation  
 
-These steps ensure the dataset is structured appropriately for machine learning models.
+These steps ensured the dataset was clean, structured, and suitable for machine learning models.
 
 ---
 
 ## 5. Model Development
 
-Multiple machine learning models were trained and evaluated:
+Three machine learning models were developed and evaluated:
 
-- Logistic Regression  
-- Decision Tree  
-- Random Forest  
+- Logistic Regression (baseline model)  
+- Decision Tree (interpretable, captures non-linear patterns)  
+- Random Forest (ensemble model for improved performance)  
 
-These models were selected to compare both simple and more complex approaches to classification.
+These models were selected to compare both simple and more advanced approaches to classification.
 
 ---
 
@@ -81,12 +81,12 @@ These models were selected to compare both simple and more complex approaches to
 ### Confusion Matrix (Random Forest)
 ![Confusion Matrix](confusion_matrix.png)
 
-The confusion matrix shows the model’s ability to correctly classify churn and non-churn customers.
+The confusion matrix shows the model’s classification performance:
 
-- True Negatives: Customers correctly identified as not churning  
-- True Positives: Customers correctly identified as churning  
+- True Negatives: Correctly identified non-churn customers  
+- True Positives: Correctly identified churn customers  
 - False Positives: Customers incorrectly flagged as churn  
-- False Negatives: Customers who churned but were not identified  
+- False Negatives: Churned customers not identified  
 
 ---
 
@@ -95,18 +95,20 @@ The confusion matrix shows the model’s ability to correctly classify churn and
 
 The ROC curve evaluates the trade-off between true positive rate and false positive rate.
 
-- The AUC score of approximately **0.82** indicates strong model performance  
+- The AUC score of approximately **0.82** indicates strong overall model performance  
 - The model demonstrates good ability to distinguish between churn and non-churn customers  
 
 ---
 
 ## 7. Key Insights
 
-- Churn is more likely among customers with **short tenure**  
-- Customers with **higher monthly charges** are more at risk  
-- Churn is influenced by identifiable patterns rather than random behavior  
+- Customers with **short tenure** are significantly more likely to churn  
+- Customers with **higher monthly charges** show increased churn risk  
+- Churn is driven by identifiable behavioral and pricing patterns  
 
-These insights reinforce that churn can be proactively managed through targeted interventions.
+Importantly, a key trade-off was observed:
+
+> While Random Forest achieved the strongest overall accuracy and an AUC of approximately 0.82, the Decision Tree demonstrated higher recall for churned customers. This highlights the trade-off between overall predictive performance and the ability to identify at-risk customers.
 
 ---
 
@@ -114,18 +116,21 @@ These insights reinforce that churn can be proactively managed through targeted 
 
 Based on the findings, the following strategies are recommended:
 
-- **Improve onboarding experience** to reduce early churn  
-- **Introduce pricing strategies or bundles** for high-paying customers  
-- **Target high-risk customers** using predictive outputs  
-- **Implement retention campaigns** driven by model insights  
+- **Strengthen onboarding experience** to reduce early-stage churn  
+- **Implement targeted retention strategies** for high-risk customers  
+- **Reassess pricing structures** for customers with high monthly charges  
+- **Use predictive outputs** to drive proactive engagement  
+
+Example intervention:
+Customers in their first 6 months with higher monthly charges can be proactively targeted with personalised onboarding support or retention incentives.
 
 ---
 
 ## 9. Conclusion
 
-This project demonstrates how machine learning can be applied to predict customer churn and generate actionable business insights.
+This project demonstrates the end-to-end application of a machine learning pipeline to predict customer churn and generate actionable insights.
 
-By combining data analysis with predictive modeling, organisations can shift from reactive to proactive customer retention strategies, ultimately improving customer lifetime value and operational efficiency.
+By combining data analysis with predictive modelling, organisations can shift from reactive to proactive retention strategies, improving customer lifetime value and operational efficiency.
 
 ---
 
