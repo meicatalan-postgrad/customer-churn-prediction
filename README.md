@@ -121,17 +121,16 @@ Based on the findings, the following strategies are recommended:
 - **Reassess pricing structures** for customers with high monthly charges  
 - **Use predictive outputs** to drive proactive engagement  
 
-Example intervention:
+Example intervention:  
 Customers in their first 6 months with higher monthly charges can be proactively targeted with personalised onboarding support or retention incentives.
 
 ---
+
 ## 9. ROI & Business Impact
 
 Implementing a predictive churn model enables a shift from reactive retention efforts to proactive, targeted intervention.
 
 ### Revenue Protection
-
-Customer churn directly impacts revenue. Even a small reduction in churn can lead to meaningful financial gains.
 
 - A 1% reduction in churn can result in significant retained revenue  
 - Retaining existing customers is up to 5x more cost-effective than acquiring new ones  
@@ -140,45 +139,36 @@ Customer churn directly impacts revenue. Even a small reduction in churn can lea
 
 ### Customer Lifetime Value (LTV)
 
-By identifying and retaining at-risk customers earlier in their lifecycle:
-
-- Extending average customer tenure by even a few months increases overall LTV  
+- Extending average customer tenure increases overall LTV  
 - Early-stage retention (first 6 months) has the highest impact on long-term profitability  
 
 ---
 
 ### Cost Efficiency
 
-Traditional retention strategies often apply broad incentives across all customers, leading to unnecessary spend.
-
-With predictive targeting:
-
-- Interventions are focused only on high-risk customers  
-- Marketing and retention budgets are used more efficiently  
-- Reduces over-discounting and improves return on retention spend  
+- Target interventions only on high-risk customers  
+- Reduce unnecessary retention spending  
+- Improve return on marketing and retention investments  
 
 ---
 
 ### Operational Impact
 
-From an operational standpoint, this model enables:
-
-- Prioritisation of high-risk customers for intervention  
-- Integration into CRM or customer success workflows  
-- Scalable and repeatable retention strategies  
+- Enables prioritisation of high-risk customers  
+- Can be integrated into CRM workflows  
+- Supports scalable and repeatable retention strategies  
 
 ---
 
 ### Strategic Value
 
-This approach reinforces a key shift:
-
 > From reactive service recovery → to proactive customer retention
 
-By embedding predictive insights into business processes, organisations can improve customer experience, reduce revenue leakage, and drive sustainable growth.
+This aligns with a governance-first approach where predictive models are embedded into structured decision-making workflows to ensure measurable outcomes.
 
+---
 
-## 9. Conclusion
+## 10. Conclusion
 
 This project demonstrates the end-to-end application of a machine learning pipeline to predict customer churn and generate actionable insights.
 
@@ -186,7 +176,7 @@ By combining data analysis with predictive modelling, organisations can shift fr
 
 ---
 
-## 10. Tools & Technologies
+## 11. Tools & Technologies
 
 - Python  
 - Pandas & NumPy  
@@ -197,7 +187,7 @@ By combining data analysis with predictive modelling, organisations can shift fr
 
 ---
 
-## 11. Project Structure
+## 12. Project Structure
 
 ```
 customer-churn-prediction/
@@ -212,7 +202,7 @@ customer-churn-prediction/
 
 ---
 
-## 12. Author
+## 13. Author
 
 **Maica Erika Catalan**  
 Global Lead – Process Optimization & Innovation  
